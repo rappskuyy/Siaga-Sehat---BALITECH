@@ -7,17 +7,17 @@ import { WhyChooseUs } from "@/components/clinic/WhyChooseUs";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Innovation Clinic — SalvaMedic" },
+      { title: "Klinik Inovasi — SalvaMedic" },
       {
         name: "description",
         content:
-          "SalvaMedic Innovation Clinic — advanced diagnostics and a human approach. Family medicine, pediatrics, cardiology and more in Lviv.",
+          "Klinik Inovasi SalvaMedic — diagnostik canggih dengan pendekatan manusiawi. Layanan kesehatan terpadu dengan dokter berlisensi.",
       },
-      { property: "og:title", content: "Innovation Clinic — SalvaMedic" },
+      { property: "og:title", content: "Klinik Inovasi — SalvaMedic" },
       {
         property: "og:description",
         content:
-          "Advanced diagnostics with a warm human touch. Book with licensed specialists at SalvaMedic.",
+          "Diagnostik canggih dengan sentuhan manusiawi. Konsultasikan dengan spesialis berlisensi di SalvaMedic.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -28,14 +28,14 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="hex-pattern min-h-screen bg-[color:var(--color-clinic-blue)] font-sans">
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-6 p-4 md:gap-8 md:p-8">
+    <main className="min-h-screen bg-[#f7f4ee] font-sans">
+      <div className="flex w-full flex-col">
         <Hero />
         <Statement />
         <Services />
         <WhyChooseUs />
-        <footer className="pb-4 pt-2 text-center text-xs text-white/70">
-          © {new Date().getFullYear()} SalvaMedic Innovation Clinic. All rights reserved.
+        <footer className="pb-4 pt-2 text-center text-xs text-[color:var(--color-clinic-muted)]">
+          © {new Date().getFullYear()} Klinik Inovasi SalvaMedic. Semua hak dilindungi.
         </footer>
       </div>
     </main>
